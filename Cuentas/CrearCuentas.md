@@ -53,7 +53,7 @@ Para cada cuenta, copia la dirección en el campo de texto, haa clic y llena el 
 
 Recuerda actualizar la página entre cada carga.
 
-![Captura de pantalla 2022-12-02 a la(s) 15.14.36](/Users/raldeco/Library/Application Support/typora-user-images/Captura de pantalla 2022-12-02 a la(s) 15.14.36.png)
+
 
 ### Paso 1.3  - Verificar el balance de nuestras cuentas
 
