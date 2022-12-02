@@ -53,7 +53,7 @@ Para cada cuenta, copia la dirección en el campo de texto, haa clic y llena el 
 
 Recuerda actualizar la página entre cada carga.
 
-
+![](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/AlgorandDispenser.png)
 
 ### Paso 1.3  - Verificar el balance de nuestras cuentas
 
