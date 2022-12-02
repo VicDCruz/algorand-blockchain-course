@@ -33,6 +33,7 @@ Instalar Python 3.8.0 (o posterior) con Pip.
   1. Baja el instalador de Python en https://www.python.org/downloads/windows/
   2. En la primera pantalla del instalador asegurate de seleccionar "Install launcher for all users" y "Add Python 3.8 to PATH".
 
+![Instalar en Windows](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/PythonWindowsPATH.png)
 
 * En macOS:
 
@@ -84,7 +85,7 @@ También necesitarás un editor de código, como [Visual Studio Code](https://co
 
 (Opcional) Recomendamos usar PyCharm con la extensión [AlgoDEA](https://algodea-docs.bloxbean.com/) que puede instalarse en el menú de "Plugins" como se muestra a continuación:
 
-
+![Plugin PyCharm](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/PycharmPlugin.png)
 
 Después de instalar la extensión AlgoDEA en PyCharm:
 
@@ -92,6 +93,7 @@ Después de instalar la extensión AlgoDEA en PyCharm:
 2. Crea un nuevo proyecto Algorand (en lugar del proyecto "Pure Python" que es el predeterminado)
 3. Configura el nodo haciendo clic en el "Explorador de Algorand" en la parte superior derecha y luego llena la información como se muestra a continuación:
 
+![PyCharm](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/step0AlgoDEAPureStakeNodeConfiguration.png)
 
 4. Haz clic en el botón "Fetch Network Info". Los datos "Genesis Hash" y "Genesis ID" deberían rellenarse automáticamente.
 
