@@ -91,6 +91,7 @@ import base64
 
 Puedes confirmar que la transacción fue registrada en la cadena de bloques en el [explorador](https://testnet.algoexplorer.io) de Algorand, buscando la dirección de tu cuenta y haciendo clic en la transacción correspondiente. 
 
+![Transaccion en AlgoExplorer](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/step2AlgoExplorer.png)
 
 ### Comisión por transacción
 
