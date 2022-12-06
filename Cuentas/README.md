@@ -47,7 +47,7 @@ Estas cuentas ya están creadas y listas para ser utilizadas en la TestNet.
 Ahora añadiremos 10 Algos a cada una de las cuentas. El Algo es la criptomoneda nativa de la blockchain de Algorand.
 
 Para poder utilizar tus cuentas, necesitas añadir Algos a ellas. En la MainNet, tendrías que comprarlos en un exchange.
-Sin embargo, en TestNet, puede utilizar el [dispensador](https://bank.testnet.algorand.network) que nos regala Algos para realizar nuestras pruebas.
+Sin embargo, en TestNet, puede utilizar el [dispensador](https://testnet.algoexplorer.io/dispenser) que nos regala Algos para realizar nuestras pruebas.
 
 Para cada cuenta, copia la dirección en el campo de texto, haa clic y llena el CAPTCHA. Da clic en Enviar. 
 
