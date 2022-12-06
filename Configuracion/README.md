@@ -4,7 +4,7 @@ Aquí aprenderemos como configurar los elementos principales para construir tran
 
 ## Conceptos Básicos
 
-Hay que tener en cuenta algunos conceptos clave a lo largo de esta tarea.
+Hay que tener en cuenta algunos conceptos clave a lo largo de este tema.
 
 El primero es que la cadena de bloques o blockchain con la que vas a interactuar puede considerarse como una instanciación de un protocolo, en este caso el protocolo Algorand. Este protocolo define una red de nodos (nodos Algorand), que a un nivel muy básico son computadoras de todo el mundo que ejecutan el software Algorand, que implementa el protocolo Algorand. 
 
