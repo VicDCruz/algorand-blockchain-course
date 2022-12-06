@@ -10,9 +10,9 @@ La dirección es completamente pública y es la información que se da a quién 
 La *llave privada* se utiliza para autorizar las transacciones desde tu cuenta, ya que estás deben firmase con dicha llave.
 Esta llave suele estar representada por un mnemónico de 25 palabras que debe mantenerse en secreto ya que quien tenga acceso a esta llave será el dueño de los activos en ella.
 
-### Paso 1.1 - Crear dos cuentas Algorand 
+### Paso 1.1 - Crear cuentas en Algorand 
 
-Ahora crearemos dos cuentas Algorand usando Python SDK. 
+Ahora crearemos cuentas Algorand usando Python SDK. 
 
 Para esto ejecturemos el código que se presenta a continuación dos veces. En este caso, se imprimen en pantalla la llave privada (mnemónico de 25 palabras) y la pública (dirección), sin embargo, se recomienda guardar ambas, de manera separada y segura.
 
@@ -38,7 +38,7 @@ Account address: ZBXIRU3KVUTZMFC2MNDHFZ5RZMEH6FYGYZ32B6BEJHQNKWTUJUBB72WL4Y
 
 > **Importante** 
 >
-> Nunca utilices esta llave privada para mantener Algos reales (es decir, lo de la MainNet). Únicamente úsalo para Algos "falsos" en la TestNet.
+> Nunca utilices esta llave privada para mantener Algos reales (es decir, dentro de la MainNet). Únicamente úsalo para Algos "falsos" en la TestNet.
 
 Estas cuentas ya están creadas y listas para ser utilizadas en la TestNet.
 
