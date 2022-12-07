@@ -10,15 +10,15 @@ El primero es que la cadena de bloques o blockchain con la que vas a interactuar
 
 Existen múltiples instancias de esta red. Las dos instancias más grandes se llaman *MainNet* y *TestNet*. Ambas son redes públicas, esto quiere decir que  cualquiera puede acceder a ellas e interactuar con ellas. Sin embargo la MainNet utiliza un suministro fijo de la moneda nativa llamada Algo, que tiene un valor monetario real. Por otro lado la *TestNet*, que es también pública, se usa para pruebas y, por tanto, tiene una moneda Algo "falsa" que puede generarse de la nada (en lugar de comprarla con dinero real). En este tutorial trabajaremos con la TestNet y no con la MainNet.
 
-También es posible crear tus propias instancias privadas de la red Algorand al grado de que esta red puede consistir en un solo nodo, como por ejemplo tu laptop.
+También es posible crear tus propias instancias privadas de la red Algorand al grado de que esta red puede consistir en un solo nodo, como por ejemplo tu laptop. Esto lo revisaremos en otro tutorial.
 
 ## Paso 0
 
 ### Antecedentes
 
-Algorand soporta oficialmente 4 Kits de Desarrollo de Software (SDK) para el desarrollo de aplicaciones: Python, Javascript, Java y Go. Además, Algorand tiene SDKs comunitarios para Rust y C#. Puedes pensar en los SDKs como bibliotecas específicas del lenguaje que te permiten interactuar con la cadena de bloques de Algorand. En este curso utilizaremos el SDK de Python. 
+Algorand soporta oficialmente 4 Kits de Desarrollo de Software (SDK) para el desarrollo de aplicaciones: Python, Javascript, Java y Go. Además, Algorand tiene SDKs comunitarios para Rust y C#. Los SDKs son como bibliotecas específicas del lenguaje que te permiten interactuar con la cadena de bloques de Algorand. En este curso utilizaremos el SDK de Python. 
 
-Para acceder a una cadena de bloques, también se necesita acceso a algún nodo de la red de la cadena de bloques. Para ello, utilizaremos el [servicio gratuito PureStake API](https://www.purestake.com/technology/algorand-api/).
+Para acceder a una cadena de bloques, también se necesita acceso a algún nodo de la red de esta cadena de bloques. Para ello, utilizaremos el [servicio gratuito PureStake API](https://www.purestake.com/technology/algorand-api/).
 
 ### Paso 0.1 - Instala Python 3.8 y Pip
 
@@ -81,7 +81,7 @@ Visita https://developer.purestake.io/ y registrare gratuitamente. Posterior men
 
 ### Paso 0.4 - Instala un IDE
 
-También necesitarás un editor de código, como [Visual Studio Code](https://code.visualstudio.com) o [PyCharm](https://www.jetbrains.com/pycharm/). Si ya tienes un editor, puedes omitir este paso. De lo contrario, descarga e instale uno de los editores mencionados.
+También necesitarás un editor de código, como [Visual Studio Code](https://code.visualstudio.com) o [PyCharm](https://www.jetbrains.com/pycharm/). Si ya tienes alguno de estos editores, puedes omitir este paso. De lo contrario, descarga e instale uno de los editores mencionados.
 
 (Opcional) Recomendamos usar PyCharm con la extensión [AlgoDEA](https://algodea-docs.bloxbean.com/) que puede instalarse en el menú de "Plugins" como se muestra a continuación:
 
