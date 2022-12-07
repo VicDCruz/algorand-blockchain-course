@@ -14,7 +14,7 @@ Esta llave suele estar representada por un mnemónico de 25 palabras que debe ma
 
 Ahora crearemos cuentas Algorand usando Python SDK. 
 
-Para esto ejecturemos el código que se presenta a continuación dos veces. En este caso, se imprimen en pantalla la llave privada (mnemónico de 25 palabras) y la pública (dirección), sin embargo, se recomienda guardar ambas, de manera separada y segura.
+Para esto ejecturemos el código que se presenta a continuación las veces que requeriramos. Si lo ejecutamos una vez se imprimen en pantalla la llave privada (mnemónico de 25 palabras) y la pública (dirección), el par de llaves necesarias para interacutar con Algorand. Es importante recordar que ambas llaves deben guardarse de manera separada y segura.
 
 ```py
 import algosdk
@@ -47,18 +47,20 @@ Estas cuentas ya están creadas y listas para ser utilizadas en la TestNet.
 Ahora añadiremos 10 Algos a cada una de las cuentas. El Algo es la criptomoneda nativa de la blockchain de Algorand.
 
 Para poder utilizar tus cuentas, necesitas añadir Algos a ellas. En la MainNet, tendrías que comprarlos en un exchange.
-Sin embargo, en TestNet, puede utilizar el [dispensador](https://testnet.algoexplorer.io/dispenser) que nos regala Algos para realizar nuestras pruebas.
+Sin embargo, en TestNet, puedes utilizar el [dispensador](https://testnet.algoexplorer.io/dispenser) que nos regala Algos para realizar nuestras pruebas.
 
-Para cada cuenta, copia la dirección en el campo de texto, haa clic y llena el CAPTCHA. Da clic en Enviar. 
+Para cada cuenta, copia la dirección en el campo de texto, haz clic y llena el CAPTCHA. Da clic en "Dispense". 
 
 Recuerda actualizar la página entre cada carga.
 
-![](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/AlgorandDispenser.png)
+![](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/AlgorandDispenser2.png)
 
 ### Paso 1.3  - Verificar el balance de nuestras cuentas
 
 Para comprobar el saldo de una cuenta podemos usar un explorador de blockchains. En nuestro caso usaremos [AlgoExplorer](https://testnet.algoexplorer.io).
 
-Simplemente coloca tu dirección en el buscador y podrás ver el saldo. Los exploradores de bloques te permiten observar el estado actual de las cadenas de bloques,  en esta caso cada cuenta creada debería tener 10 Algos. Si no es así, vuelva al paso 1.1.
+Simplemente coloca tu dirección en el buscador y podrás ver el saldo. Los exploradores de bloques te permiten observar el estado actual de las cadenas de bloques, en esta caso cada cuenta creada debería tener 10 Algos. Si no es así, vuelva al paso 1.1.
+
+![](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/SaldoExplorer.png)
 
 Ten en cuenta que cada transacción de carga tarda menos de 5 segundos en ser registrada en la cadena de bloques para posteriormente ver el saldo actualizo. Y lo que es más importante, una vez que la transacción aparece en el explorador (es decir, se registra en un bloque), la transacción es definitiva y no puede revertirse ni cancelarse. Esta es una propiedad distintiva de la cadena de bloques Algorand: **finalización inmediata**.
