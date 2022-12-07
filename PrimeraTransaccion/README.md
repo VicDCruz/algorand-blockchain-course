@@ -2,7 +2,7 @@
 
 Una transacción es la transferencia de Algos de una cuenta a otra.
 
-Cualquier transacción puede incluir una "nota" arbitraria de hasta 1kb. En otras palabras, las notas permiten almacenar una pequeña cantidad de datos en la cadena de bloques que nos permitirá identificar una transacción de otra.
+Cualquier transacción puede incluir una "nota" arbitraria de hasta 1kb. En otras palabras, las notas permiten almacenar una pequeña cantidad de datos en la cadena de bloques que nos permitirá identificar una transacción de otra de manera local.
 
 ### Paso 2.1 Conecta con el cliente
 
@@ -20,7 +20,7 @@ algod_client = algod.AlgodClient(
 
 ### Paso 2.2 Revisa el saldo de tu cuenta
 
-Antes de pasar al siguiente paso, verifiquemos el saldo de nuestra cuenta.
+Antes de pasar al siguiente paso, verifiquemos el saldo de nuestra(s) cuenta(s) usando las siguientes líneas de código.
 
 ```python
 account_info = algod_client.account_info(my_address)
@@ -31,7 +31,7 @@ Hay que tener en cuenta que el importe del saldo se especifica en microAlgos: 1.
 
 ### Paso 2.3 Crea una transacción
 
-Las transacciones se utilizan para interactuar con la red Algorand. Para crear una transacción podemos usar siguiente código.  
+Las transacciones se utilizan para interactuar con la red Algorand. Para crear una transacción podemos usar siguiente código. Como se puede ver se debe indicar la dirección a donde se depositara la cantidad de Algos que indiquemos además de una nota.  
 
 ```python
 from algosdk.future import transaction
@@ -73,7 +73,6 @@ import base64
         confirmed_txn = transaction.wait_for_confirmation(algod_client, txid, 4)  
     except Exception as err:
         print(err)
-        return
 
     print("Transaction information: {}".format(
         json.dumps(confirmed_txn, indent=4)))
@@ -95,6 +94,6 @@ Puedes confirmar que la transacción fue registrada en la cadena de bloques en e
 
 ### Comisión por transacción
 
-Para enviar una transacción en Algorand, hay que pagar una comisión. La tarifa mínima es de 0,001 Algo (es decir, 1.000 microAlgos). La tarifa requerida puede aumentar en caso de congestión. 
+Para enviar una transacción en Algorand, hay que pagar una comisión. La tarifa mínima es de 0.001 Algo (es decir, 1.000 microAlgos). La tarifa requerida puede aumentar en caso de congestión. 
 Consulte la [documentación para desarrolladores](https://developer.algorand.org/docs/features/transactions/#fees) para más detalles.
 
