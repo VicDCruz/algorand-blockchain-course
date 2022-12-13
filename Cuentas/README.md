@@ -1,4 +1,4 @@
-## Paso 1 - Crear cuentas en Algorand y añadirles fondos
+## Crear cuentas en Algorand y añadirles fondos
 
 ### Conceptos Básicos
 
@@ -10,7 +10,7 @@ La dirección es completamente pública y es la información que se da a quién 
 La *llave privada* se utiliza para autorizar las transacciones desde tu cuenta, ya que estás deben firmase con dicha llave.
 Esta llave suele estar representada por un mnemónico de 25 palabras que debe mantenerse en secreto ya que quien tenga acceso a esta llave será el dueño de los activos en ella.
 
-### Paso 1.1 - Crear cuentas en Algorand 
+### 1.1 - Crear cuentas en Algorand 
 
 Ahora crearemos cuentas Algorand usando Python SDK. 
 
@@ -42,7 +42,7 @@ Account address: ZBXIRU3KVUTZMFC2MNDHFZ5RZMEH6FYGYZ32B6BEJHQNKWTUJUBB72WL4Y
 
 Estas cuentas ya están creadas y listas para ser utilizadas en la TestNet.
 
-### Paso 1.2 - Añadirles fondos a las cuentas
+### 1.2 - Añadirles fondos a las cuentas
 
 Ahora añadiremos 10 Algos a cada una de las cuentas. El Algo es la criptomoneda nativa de la blockchain de Algorand.
 
@@ -55,7 +55,7 @@ Recuerda actualizar la página entre cada carga.
 
 ![](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/AlgorandDispenser2.png)
 
-### Paso 1.3  - Verificar el balance de nuestras cuentas
+### 1.3  - Verificar el balance de nuestras cuentas
 
 Para comprobar el saldo de una cuenta podemos usar un explorador de blockchains. En nuestro caso usaremos [AlgoExplorer](https://testnet.algoexplorer.io).
 
