@@ -1,10 +1,10 @@
-## Paso 2 - Tu primera transacción
+## 2. Tu primera transacción
 
 Una transacción es la transferencia de Algos de una cuenta a otra.
 
 Cualquier transacción puede incluir una "nota" arbitraria de hasta 1kb. En otras palabras, las notas permiten almacenar una pequeña cantidad de datos en la cadena de bloques que nos permitirá identificar una transacción de otra de manera local.
 
-### Paso 2.1 Conecta con el cliente
+### 2.1 Conecta con el cliente
 
 El SDK de Python permite enviar transacciones a través de su cliente. El cliente debe ser instanciado antes de hacer llamadas a los puntos finales de la API y se deben proporcionar valores para `algod-address` y `algod-token`. 
 
@@ -18,7 +18,7 @@ algod_client = algod.AlgodClient(
 )
 ```
 
-### Paso 2.2 Revisa el saldo de tu cuenta
+### 2.2 Revisa el saldo de tu cuenta
 
 Antes de pasar al siguiente paso, verifiquemos el saldo de nuestra(s) cuenta(s) usando las siguientes líneas de código.
 
@@ -29,7 +29,7 @@ print("Account balance: {} microAlgos".format(account_info.get('amount')) + "\n"
 
 Hay que tener en cuenta que el importe del saldo se especifica en microAlgos: 1.000.000 microAlgo = 1 Algo.
 
-### Paso 2.3 Crea una transacción
+### 2.3 Crea una transacción
 
 Las transacciones se utilizan para interactuar con la red Algorand. Para crear una transacción podemos usar siguiente código. Como se puede ver se debe indicar la dirección a donde se depositara la cantidad de Algos que indiquemos además de una nota.  
 
@@ -47,7 +47,7 @@ from algosdk import constants
 
 ```
 
-### Paso 2.4 Firmar una transacción 
+### 2.4 Firmar una transacción 
 
 Antes de enviar la transacción, esta tiene que ser firmada con la llave privada del creador de la misma. Para eso puedes usar el siguiente código.
 
@@ -55,7 +55,7 @@ Antes de enviar la transacción, esta tiene que ser firmada con la llave privada
 signed_txn = unsigned_txn.sign(private_key)
 ```
 
-### Paso 2.5 Enviar una transacción
+### 2.5 Enviar una transacción
 
 La transacción firmada puede ahora ser enviada a la red. `wait_for_confirmation` es un método que es llamado después de que la transacción es enviada para esperar hasta que la transacción sea transmitida a la blockchain de Algorand y esta sea confirmada. Esto puede verse en el siguiente código.
 
