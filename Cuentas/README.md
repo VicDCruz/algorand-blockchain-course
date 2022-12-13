@@ -1,4 +1,4 @@
-## Crear cuentas en Algorand y añadirles fondos
+## 1. Crear cuentas en Algorand y añadirles fondos
 
 ### Conceptos Básicos
 
