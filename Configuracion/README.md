@@ -1,4 +1,4 @@
-# Configuración Inicial
+# 0. Configuración Inicial
 
 Aquí aprenderemos como configurar los elementos principales para construir transacciones y contratos inteligentes en Algorand.
 
