@@ -1,4 +1,4 @@
-## 3.  Crear tu propio activo
+## 3.  Crear y administrar tu propio activo
 
 El protocolo Algorand permite la creación de activos *on-chain* o *tokens* (criptomonedas personalizadas) que tendran la misma seguridad, compatibilidad, velocidad y facilidad de uso que el Algo. El nombre oficial de los activos en Algorand es *Activos Estándar de Algorand (ASA)*.
 Los ASA se usan para representar monedas estables (*stablecoins*), recompensas por lealtad, créditos del sistema, puntos para un juego u objetos coleccionables, por nombrar sólo algunos. También pueden representar activos únicos, como la escritura de una casa, objetos coleccionables, piezas únicas en una cadena de suministro, etc. Además, existen funciones opcionales para imponer restricciones de transferencia a un activo, lo que ayuda a respaldar casos de uso de valores, cumplimiento y certificación. Si quieres conocer mas puedes consultar [la documentación para desarrolladores](https://developer.algorand.org/docs/features/asa/).
