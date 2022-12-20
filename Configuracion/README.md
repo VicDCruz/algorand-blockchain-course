@@ -55,7 +55,7 @@ Instalar Python 3.8.0 (o posterior) con Pip.
   sudo apt install python3-pip
   ```
 
-### 2 - Instala el SDK de Python
+### Paso 2 - Instala el SDK de Python
 
 Abre una terminal y ejecuta:
 
@@ -102,7 +102,8 @@ Después de instalar la extensión AlgoDEA en PyCharm:
    > * Si no ves la pestaña "Algorand Explorer", comprueba que has creado un nuevo proyecto Algorand y no un proyecto Pure Python.
 
 ### Visual Studio Code
-Si desear trabajar con el IDE Visual Studio Code hay que instalar la extensión [Algorand VS Code Extension](https://marketplace.visualstudio.com/items?itemName=obsidians.vscode-algorand) esto puede hacerse en el menú de "Plugins" como se muestra a continuación:
+Si desear trabajar con el IDE Visual Studio Code hay que instalar la extensión [Algorand VS Code Extension](https://marketplace.visualstudio.com/items?itemName=obsidians.vscode-algorand) esto puede hacerse en el menú de "Extensions" como se muestra a continuación:
 
+![VSCode](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/VSCodeAlgorand.png)
 
    
