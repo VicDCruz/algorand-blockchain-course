@@ -26,8 +26,8 @@ Los pasos a seduir son los siguientes:
 En [AlgoExplorer](https://testnet.algoexplorer.io) puedes ver que las transacciones se agrupan de dos maneras:
 
 1. Cada transacción del grupo tiene un ID de grupo, que enlaza con una página con todas las transacciones del grupo. 
-   ![Screenshot of a transaction in a group](img/step4AlgoExplorerTxn.png)
+   ![](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/step4AlgoExplorerTxn.png)
 2. Si varias transacciones de un grupo afectan a la misma cuenta, en la página de la cuenta aparecerá un pequeño icono junto a las transacciones. Véase la captura de pantalla siguiente:
-   ![Screenshot of an account with atomic transfer](/Users/raldeco/Documents/Algorand/Primera Transacción /Practical-HW1/img/step4AlgoExplorerAccount.png)
+   ![](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/step4AlgoExplorerAccount.png)
 
 Si no ves lo anterior, significa que enviaste dos transacciones independientes en lugar de hacer una transferencia atómica.
