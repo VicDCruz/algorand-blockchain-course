@@ -2,8 +2,7 @@ import json
 import base64
 from algosdk.v2client import algod
 from algosdk import account, mnemonic
-from algosdk.future.transaction import *
-from algosdk.v2client.algod import AlgodClient
+from algosdk.transaction import *
 
 # Creamos un diccionario de cuentas a usar
 # Aquí usamos mnemónicos que por seguridad no incluimos en el código
@@ -17,18 +16,31 @@ for m in [mnemonic1, mnemonic2, mnemonic3]:
 
 # Agregamos la dirección del nodo y el token
 
-algod_address = "https://testnet-algorand.api.purestake.io/ps2"
+#Si estas usando PureStake
+#algod_address = "https://testnet-algorand.api.purestake.io/ps2"
+#algod_token = ""
+
+#Si estas usando AlgoNode
+algod_address = "https://testnet-api.algonode.cloud"
 algod_token = ""
 
 # Inicializamos el cliente algod
 
+#Si estas usando PureStake
+#algod_client = algod.AlgodClient(
+#    algod_token="",
+#    algod_address="https://testnet-algorand.api.purestake.io/ps2",
+#    headers={"X-API-Key": "gyCmEX2y5p7G9F9D36KgB4E4c3yKPhdt8qQIBacF"}
+#)
+
+#Si estas usando AlgoNode
 algod_client = algod.AlgodClient(
     algod_token="",
-    algod_address="https://testnet-algorand.api.purestake.io/ps2",
-    headers={"X-API-Key": "gyCmEX2y5p7G9F9D36KgB4E4c3yKPhdt8qQIBacF"}
+    algod_address="https://testnet-api.algonode.cloud",
+    headers={"X-API-Key": ""}
 )
 
-#   Función de utilidad para imprimir el activo creado para la cuenta y el assetid
+#  Función de utilidad para imprimir el activo creado para la cuenta y el assetid
 def print_created_asset(algodclient, account, assetid):
     
     account_info = algodclient.account_info(account)
@@ -42,7 +54,7 @@ def print_created_asset(algodclient, account, assetid):
             break
 
 
-#   Función de utilidad para imprimir la tenencia de activos para la cuenta y assetid
+#Función de utilidad para imprimir la tenencia de activos para la cuenta y assetid
 def print_asset_holding(algodclient, account, assetid):
     account_info = algodclient.account_info(account)
     idx = 0
