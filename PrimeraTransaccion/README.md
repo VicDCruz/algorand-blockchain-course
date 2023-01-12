@@ -8,13 +8,22 @@ Cualquier transacción puede incluir una "nota" arbitraria de hasta 1kb. En otra
 
 El SDK de Python permite enviar transacciones a través de su cliente. El cliente debe ser instanciado antes de hacer llamadas a los puntos finales de la API y se deben proporcionar valores para `algod-address` y `algod-token`. 
 
-Para utilizar el servicio API de PureStake,  `algod_client` debe incluir la llave PureStake API que obtuviste en el paso 0.3 como se muestra a continuación:
+Para utilizar el servicio API de PureStake, `algod_client` debe incluir la llave PureStake API que obtuviste previamente como se muestra a continuación:
 
 ```python
 algod_client = algod.AlgodClient(
     algod_token="",
     algod_address="https://testnet-algorand.api.purestake.io/ps2",
     headers={"X-API-Key": "YOUR PURESTAKE API KEY"}
+)
+```
+Para el caso del servicio API de Algo node, `algod_client` debe tener una cadena vacia `algod_token` y  `X-API-Key` ya que este servicio no las requiere. Se muestra a continuación esta opción.
+
+```python
+algod_client = algod.AlgodClient(
+    algod_token="",
+    algod_address="https://testnet-api.algonode.cloud",
+    headers={"X-API-Key": ""}
 )
 ```
 
@@ -34,7 +43,7 @@ Hay que tener en cuenta que el importe del saldo se especifica en microAlgos: 1.
 Las transacciones se utilizan para interactuar con la red Algorand. Para crear una transacción podemos usar siguiente código. Como se puede ver se debe indicar la dirección a donde se depositara la cantidad de Algos que indiquemos además de una nota.  
 
 ```python
-from algosdk.future import transaction
+from algosdk import transaction
 from algosdk import constants
 
     params = algod_client.suggested_params()
