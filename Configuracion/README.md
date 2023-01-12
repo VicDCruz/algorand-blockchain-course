@@ -63,16 +63,16 @@ Abre una terminal y ejecuta:
 python3 -m pip install py-algorand-sdk --upgrade
 ```
 
-Verifica que estas instalando la última version del python algorand sdk. Esto lo pyedes revisar en [py-algorand-sdk](https://py-algorand-sdk.readthedocs.io/en/latest/index.html)
+Verifica que estas instalando la última version del python algorand sdk. Esto lo puedes revisar en [py-algorand-sdk](https://py-algorand-sdk.readthedocs.io/en/latest/index.html)
 
 > **Problemas comunes**
 >
 > * Si estas usando Windows y obtienes errores, remplaza `python3` por `python` en todos los comandos.
 > * Revisa que estas usando la versión de Python donde instalaste py-algorand-sdk. Esto lo puedes hacer usando el comando 
-> ```bash
-> pip list
-> ```
-> * Si sigues obteniendo errores, comprueba que has añadido `python` al PATH al instalarlo (véase Paso 0.1). Si no es así, desinstala y vuelve a instalar Python.
+> >```bash
+> >pip list
+> >```
+> * Si sigues obteniendo errores, comprueba que has añadido `python` al PATH al instalarlo (véase Paso 1). Si no es así, desinstala y vuelve a instalar Python.
 
 ### Paso 3 - Obten una llave PureStake API
 
@@ -81,7 +81,7 @@ Visita https://developer.purestake.io/ y registrare gratuitamente. Posteriorment
 
 > **Nota**
 >
-> No hagas publica tu API PureStake Key. Cada vez que hagas pñublico tu código, elimina esta llave.
+> No hagas publica tu API PureStake Key. Cada vez que hagas público tu código, elimina esta llave.
 
 ### Paso 4 - Instala un IDE
 
