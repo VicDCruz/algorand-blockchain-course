@@ -1,17 +1,28 @@
 from algosdk.v2client import algod
 from algosdk import mnemonic
-from algosdk.future import transaction
+from algosdk import transaction
 from algosdk import constants
 import json
 import base64
 
 #Conexión con el cliente
 
+#Si usas PureStake
+
+#algod_client = algod.AlgodClient(
+#    algod_token="",
+#    algod_address="https://testnet-algorand.api.purestake.io/ps2",
+#    headers={"X-API-Key": "API KEY"}
+#)
+
+#Si usas AlgoNode
+
 algod_client = algod.AlgodClient(
     algod_token="",
-    algod_address="https://testnet-algorand.api.purestake.io/ps2",
-    headers={"X-API-Key": "YOUR PURESTAKE API KEY"}
+    algod_address="https://testnet-api.algonode.cloud",
+    headers={"X-API-Key": ""}
 )
+
 
 #Incluye la información de una de tus cuentas.
 #Recuerda que los datos de la llave privada nunca deben estar en código
