@@ -16,7 +16,9 @@ También es posible crear tus propias instancias privadas de la red Algorand al 
 
 Algorand soporta oficialmente 4 Kits de Desarrollo de Software (SDK) para el desarrollo de aplicaciones: Python, Javascript, Java y Go. Además, Algorand tiene SDKs comunitarios para Rust y C#. Los SDKs son como bibliotecas específicas del lenguaje que te permiten interactuar con la cadena de bloques de Algorand. En este curso utilizaremos el SDK de Python. 
 
-Para acceder a una cadena de bloques, también se necesita acceso a algún nodo de la red de esta cadena de bloques. Para ello, utilizaremos el [servicio gratuito PureStake API](https://www.purestake.com/technology/algorand-api/).
+Para acceder a una cadena de bloques, también se necesita acceso a algún nodo de la red de esta cadena de bloques. Para ello, te mostraremos como usar dos tipos de servicios gratuitos [PureStake API](https://www.purestake.com/technology/algorand-api/) y [Algo Node](https://algonode.io/api/). Ambos ofrecen acceso a un nodo de la red a través de su API. 
+
+También puedes hacerlo a través del [Sandbox de Algorand](https://developer.algorand.org/tutorials/exploring-the-algorand-sandbox/) que te permite tener un nodo de manera local en tu computadora. En este tutorial no usaremos este método, pero puedes revisar la documentación del mismo si deseas usarlo.
 
 ### Paso 1 - Instala Python 3.8 y Pip
 
@@ -74,10 +76,14 @@ Verifica que estas instalando la última version del python algorand sdk. Esto l
 > >```
 > * Si sigues obteniendo errores, comprueba que has añadido `python` al PATH al instalarlo (véase Paso 1). Si no es así, desinstala y vuelve a instalar Python.
 
-### Paso 3 - Obten una llave PureStake API
+### Paso 3 - Conectarse al nodo usando su API
 
-Existen varias maneras de interactuar con una blockchain, en este caso usaremos el servicio de [PureStake](https://algobuilder.dev/guide/purestake-api.html). Este es un "API-As-A-Service" que proporciona acceso a las API REST nativas de Algorand para su MainNet y su TestNet. Para poder usarla es necesario registrarse y obtener una API KEY (necesaria para realizar solicitudes).
-Visita https://developer.purestake.io/ y registrare gratuitamente. Posteriormente obten una PureStake API Key.
+Existen varias maneras de interactuar con una blockchain, en este caso te explicaremos como usar los servivios gratuitos de dos "API-As-A-Service" que proporcionan acceso a las API REST nativas de Algorand para su MainNet y su TestNet.
+
+1. El servicio de [PureStake](https://algobuilder.dev/guide/purestake-api.html). Para poder usarla es necesario registrarse y obtener una API KEY (necesaria para realizar solicitudes). Visita https://developer.purestake.io/ y registrare gratuitamente. Posteriormente obten una PureStake API Key y guardala de manera segura.
+2. El servicio de [Algo Node](https://algonode.io/). Para poder usarla NO es necesario registro ni API KEY, sin embargo tiene restricción en el número de solicitudes realizadas a través de su servicio gratuito.
+
+Mas adelante te mostraremos como usar ambas.
 
 > **Nota**
 >
@@ -96,9 +102,14 @@ Después de instalar la extensión AlgoDEA en PyCharm:
 
 1. Abre PyCharm
 2. Crea un nuevo proyecto Algorand (en lugar del proyecto "Pure Python" que es el predeterminado)
-3. Configura el nodo haciendo clic en el "Explorador de Algorand" en la parte superior derecha y luego llena la información como se muestra a continuación:
+3. Configura el nodo haciendo clic en el "Explorador de Algorand" en la parte superior derecha, agrega un nuevo nodo y, dependiendo del servicio usado en el paso 3 deberas incluir las ligas del EndPoint y el Indexer. 
+A continuación se muestra el ejemplo con PureStake.
 
-![PyCharm](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/step0AlgoDEAPureStakeNodeConfiguration.png)
+![PureStake](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/PureStakeNodeConfiguration.png)
+
+A continuación se muestra el ejemplo con Algo Node.
+
+![AlgoNode](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/AlgoNodeNodeConfiguration.png)
 
 4. Haz clic en el botón "Fetch Network Info". Los datos "Genesis Hash" y "Genesis ID" deberían rellenarse automáticamente.
 
