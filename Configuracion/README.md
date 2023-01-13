@@ -8,9 +8,9 @@ Hay que tener en cuenta algunos conceptos clave a lo largo de este tema.
 
 El primero es que la cadena de bloques o blockchain con la que vas a interactuar puede considerarse como una instanciación de un protocolo, en este caso el protocolo Algorand. Este protocolo define una red de nodos (nodos Algorand), que a un nivel muy básico son computadoras de todo el mundo que ejecutan el software Algorand y que implementa el protocolo Algorand. 
 
-Existen múltiples instancias de esta red. Las dos instancias más grandes se llaman *MainNet* y *TestNet*. Ambas son redes públicas, esto quiere decir que  cualquiera puede acceder a ellas e interactuar con ellas. Sin embargo la MainNet utiliza un suministro fijo de la moneda nativa llamada Algo, que tiene un valor monetario real. Por otro lado la *TestNet*, que es también pública, se usa para pruebas y, por tanto, tiene una moneda Algo "falsa" que puede generarse de la nada (en lugar de comprarla con dinero real). En este tutorial trabajaremos con la TestNet y no con la MainNet.
+Existen múltiples instancias de esta red. Las dos instancias más grandes se llaman *MainNet* y *TestNet*. Ambas son redes públicas, esto quiere decir que cualquiera puede acceder a ellas e interactuar con ellas. Sin embargo, la MainNet utiliza un suministro fijo de la moneda nativa llamada Algo, y en ella tiene un valor monetario real. Por otro lado la *TestNet*, que es también pública, se usa para pruebas y por tanto tiene una moneda Algo "falsa" que puede generarse de la nada (en lugar de comprarla con dinero real). En este tutorial trabajaremos con la TestNet y no con la MainNet.
 
-También es posible crear tus propias instancias privadas de la red Algorand al grado de que esta red puede consistir en un solo nodo, como por ejemplo tu laptop. Esto lo revisaremos en otro tutorial.
+También es posible crear tus propias instancias privadas de la red Algorand generando una red queconsiste de un solo nodo, como por ejemplo tu laptop. Esto lo revisaremos en otro tutorial.
 
 ### Antecedentes
 
@@ -122,4 +122,7 @@ Si desear trabajar con el IDE Visual Studio Code hay que instalar la extensión 
 
 ![VSCode](https://github.com/raldecop/AlgorandEsp/blob/main/Imagenes/VSCodeAlgorand.png)
 
-   
+### Gitpod   
+
+Otra opción es usar el IDE en línea que proporciona el servicio de [Gitpod](gitpod.io). Para acceder a él deberas tener cuenta de GitHub, GitLab o Bitbucket. En estas cuentas deberás crear un repositorio con el código a ejecutar. Si es la primera vez que usas este servicio verifica que este instalada la extensión de python, para posteriormente en su consola instalar el SDK de Python (Paso 2). 
+
