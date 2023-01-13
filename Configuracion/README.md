@@ -124,5 +124,5 @@ Si desear trabajar con el IDE Visual Studio Code hay que instalar la extensión 
 
 ### Gitpod   
 
-Otra opción es usar el IDE en línea que proporciona el servicio de [Gitpod](www.gitpod.io). Para acceder a él deberas tener cuenta de GitHub, GitLab o Bitbucket. En estas cuentas deberás crear un repositorio con el código a ejecutar. Si es la primera vez que usas este servicio verifica que este instalada la extensión de python, para posteriormente en su consola instalar el SDK de Python (Paso 2). 
+Otra opción es usar el IDE en línea que proporciona el servicio de [Gitpod](https://gitpod.io). Para acceder a él deberas tener cuenta de GitHub, GitLab o Bitbucket. En estas cuentas deberás crear un repositorio con el código a ejecutar. Si es la primera vez que usas este servicio verifica que este instalada la extensión de python, para posteriormente en su consola instalar el SDK de Python (Paso 2). 
 
