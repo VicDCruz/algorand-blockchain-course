@@ -69,7 +69,6 @@ signed_txn = unsigned_txn.sign(private_key)
 La transacción firmada puede ahora ser enviada a la red. `wait_for_confirmation` es un método que es llamado después de que la transacción es enviada para esperar hasta que la transacción sea transmitida a la blockchain de Algorand y esta sea confirmada. Esto puede verse en el siguiente código.
 
 ```python
-`<code>`
 import json
 import base64
 
