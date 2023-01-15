@@ -47,7 +47,8 @@ En el siguiente código se muestra la modificación del administrador de un acti
 
 ```python
 # Cambiando administrador
-# El administrador actual (la cuenta 2) emite una transacción de configuración de activos que asigna la cuenta 1 como nuevo administrador. 
+# El administrador actual (la cuenta 2) emite una transacción de configuración de activos 
+# que asigna la cuenta 1 como nuevo administrador. 
 # El resto de las operaciones quedan igual.
 
 txn = AssetConfigTxn(
