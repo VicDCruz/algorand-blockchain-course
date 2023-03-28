@@ -1,0 +1,1 @@
+Here we can save all private and public keys (aka. mnemonic and account address) as a `.secret` file.

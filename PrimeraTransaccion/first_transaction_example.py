@@ -5,6 +5,8 @@ from algosdk import constants
 import json
 import base64
 
+from entities.key_account import KeyAccount
+
 #Conexión con el cliente
 
 #Si usas PureStake
@@ -28,8 +30,9 @@ algod_client = algod.AlgodClient(
 #Recuerda que los datos de la llave privada nunca deben estar en código
 #Aquí lo hacemos para facilitar la explicación
 
-my_address = "TU DIRECCION"
-private_key = mnemonic.to_ private_key("Tu mnemónico de 25 palabras")
+account_a = KeyAccount('../llaves/account-b.secret')
+my_address = account_a.account_address
+private_key = mnemonic.to_private_key(account_a.private_mnemonic)
 
 #Verificando el balance de la cuenta
 
@@ -42,8 +45,10 @@ params = algod_client.suggested_params()
 # comment out the next two (2) lines to use suggested fees
 params.flat_fee = True
 params.fee = constants.MIN_TXN_FEE
-receiver = "DIRECCION DEL RECEPTOR"
-note = "My first transaction".encode()
+
+account_b = KeyAccount('../llaves/account-a.secret')
+receiver = account_b.account_address
+note = "My second transaction".encode()
 amount = 1000000
 unsigned_txn = transaction.PaymentTxn(my_address, params, receiver, amount, None, note)
 

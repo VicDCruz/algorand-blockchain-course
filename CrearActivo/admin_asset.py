@@ -4,14 +4,16 @@ from algosdk.v2client import algod
 from algosdk import account, mnemonic, encoding
 from algosdk.transaction import *
 
+from entities.key_account import KeyAccount
+
 # Aquí usamos mnemónicos que por seguridad no incluimos en el código
 
-mnemonic1 = "mnemonic1"
-mnemonic2 = "mnemonic2"
-mnemonic3 = "mnemonic3"
-address1 = "address1"
-address2 = "address2"
-address3 = "address3"
+mnemonic1 = KeyAccount('../llaves/account-a.secret').private_mnemonic
+mnemonic2 = KeyAccount('../llaves/account-b.secret').private_mnemonic
+mnemonic3 = KeyAccount('../llaves/account-c.secret').private_mnemonic
+address1 = KeyAccount('../llaves/account-a.secret').account_address
+address2 = KeyAccount('../llaves/account-b.secret').account_address
+address3 = KeyAccount('../llaves/account-c.secret').account_address
 
 accounts = [address1, address2, address3]
 
@@ -44,7 +46,7 @@ algod_client = algod.AlgodClient(
 
 def print_created_asset(algodclient, account, assetid):
     account_info = algodclient.account_info(account)
-    idx = 0;
+    idx = 0
     for my_account_info in account_info['created-assets']:
         scrutinized_asset = account_info['created-assets'][idx]
         idx = idx + 1
@@ -163,16 +165,16 @@ if not holding:
         index=asset_id)
     stxn = txn.sign(SKs[2])
 
-    try:
-        txid = algod_client.send_transaction(stxn)
-        print("Signed transaction with txID: {}".format(txid))
-        confirmed_txn = wait_for_confirmation(algod_client, txid, 4)
-        print("TXID: ", txid)
-        print("Result confirmed in round: {}".format(confirmed_txn['confirmed-round']))
-
-    except Exception as err:
-        print(err)
-    print_asset_holding(algod_client, accounts[2], asset_id)
+    # try:
+    #     txid = algod_client.send_transaction(stxn)
+    #     print("Signed transaction with txID: {}".format(txid))
+    #     confirmed_txn = wait_for_confirmation(algod_client, txid, 4)
+    #     print("TXID: ", txid)
+    #     print("Result confirmed in round: {}".format(confirmed_txn['confirmed-round']))
+    #
+    # except Exception as err:
+    #     print(err)
+    # print_asset_holding(algod_client, accounts[2], asset_id)
 
 # Transferir un activo
 
